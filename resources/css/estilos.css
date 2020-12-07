@@ -11,6 +11,7 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-size: 12px;
 }
 
 /*Configurando el header de la pagina*/
@@ -65,4 +66,77 @@ body {
     text-decoration: none;
     color: rgb(85, 84, 84);
     font-size: 20px;
+}
+
+.esconder-desktop {
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .esconder {
+        display: none;
+    }
+
+    .esconder-desktop {
+        display: block;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .logo-container img {
+        height: 40px;
+    }
+    
+}
+
+/*Configurando el banner de la pagina*/
+
+.banner-container {
+    padding: 32px 24px;
+    background-color: rgba(190, 189, 189, 0.828);
+    display: flex;
+}
+
+.banner-img-container {
+    width: 60%;
+}
+
+.banner-img-container img {
+    width: 100%;
+}
+
+.banner-description-container {
+    width: 40%;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-description-container h2 {
+    font-weight: 900;
+    font-size: 2rem;
+    color:  rgb(66, 65, 65);
+    margin-bottom: 10px;
+}
+
+.banner-description-container p {
+    color: rgb(66, 65, 65);
+    margin-top: 0;
+    
+}
+
+.button-banner {
+    display: block;
+    background-color:  rgb(66, 65, 65);
+    padding: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 70%;
 }
