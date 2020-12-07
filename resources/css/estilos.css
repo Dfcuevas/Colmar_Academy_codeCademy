@@ -7,3 +7,62 @@ html {
 *::after {
     box-sizing: inherit;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Configurando el header de la pagina*/
+
+.header-container {
+    height: 64px;
+    padding: 0 24px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 54px;
+}
+
+.logo-container span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.colmar-title {
+    color: rgb(66, 65, 65);
+}
+
+.academy-title {
+    color: rgb(168, 164, 164);
+}
+
+
+.nav-container ul{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container ul li {
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+.nav-container ul li:last-of-type {
+    margin-right: 0;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: rgb(85, 84, 84);
+    font-size: 20px;
+}
